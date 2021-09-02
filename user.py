@@ -65,8 +65,8 @@ class Credential:
         '''
         pwchar = string.printable
         length = int(input('Enter password length desired: '))
-        generate_password = '' #It was gen_pwd = ''
-        for pwchar in range(length): # I have added pw in the pwchar
+        generate_password = ''
+        for pwchar in range(length):
             generate_password += random.choice(pwchar)
         return generate_password
 
@@ -91,5 +91,5 @@ class Credential:
         '''
 		Class method that copies a credential's password of a specific social media site after the credential's social media name is entered
 		'''
-        collect_password = Credential.search_social_media(social_media)  # It was collect_pass = Credential.search_social_media(social_media)
+        collect_password = Credential.search_social_media(social_media)
         return pyperclip.copy(collect_password.password)

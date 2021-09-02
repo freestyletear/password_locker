@@ -1,5 +1,5 @@
-import unittest  # Importing the unittest module
-import pyperclip  # helps in copy and paste functions
+import unittest 
+import pyperclip 
 
 from user import User, Credential
 

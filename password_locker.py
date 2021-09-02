@@ -1,7 +1,5 @@
 #! /usr/bin/env python3
-# import pyperclip
 
-# It was from snaccounts import User, Credential
 from user import User, Credential
 
 
@@ -32,7 +30,7 @@ def generate_password():
     '''
     Function to automatically generate password
     '''
-    generate_password = Credential.generate_password() # It was gen_pwd = Credential.generate_password()
+    generate_password = Credential.generate_password()
     return generate_password
 
 
@@ -68,12 +66,11 @@ def copy_password(social_media):
 
 def main():
 	print(' ')
-	print('Welcome to Password Locker.')
-        print('A product from BTRD created by Keith James.') # Watch out i added this
+	print('Welcome to Password Locker. A product from BTRD created by Keith James.')
 	while True:
 		print(' ')
 		print("-"*70)
-		print('Use these codes to navigate: \n ca-Create Password Locker Account \n li-Log Into Password Locker to access your credentials \n exit()- To exit') # I have changed it from ex-Exit
+		print('Use these codes to navigate: \n ca-Create Password Locker Account \n li-Log Into Password Locker to access your credentials \n exit()- To exit')
 		short_code = input('Enter an option: ').lower().strip()
 		if short_code == 'exit()':
 			break
@@ -95,7 +92,7 @@ def main():
 			print('To login, enter your password locker account details:')
 			user_name = input('Enter your first name - ').strip()
 			password = str(input('Enter your password - '))
-			user_exits = authenticate_user(user_name, password) # It was user_exists = authenticate_user(user_name, password)
+			user_exits = authenticate_user(user_name, password)
 			if user_exits == user_name:
 				print(" ")
 				print(f'{user_name} Before you leave. If you might change your mind please choose an option to continue.')
