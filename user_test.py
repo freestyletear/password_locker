@@ -65,3 +65,10 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_credential.social_media, 'facebook')
         self.assertEqual(self.new_credential.account_name, 'James')
         self.assertEqual(self.new_credential.password, 'keishamapesa')
+
+    def test_save_credentials(self):
+        '''
+        Test and confirm that the new credential information is being saved
+        '''
+        self.new_credential.save_credentials()
+        self.assertEqual(len(Credential.credentials_list), 1)
