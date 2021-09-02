@@ -79,7 +79,7 @@ To fix a bug or enhance an existing module, follow these steps:
 
 ## Sources
 
-- 👨‍💻<p align="left"> <img width="800" height="500" src="" alt="" /> </p>
+- 👨‍💻<p align="left"> <img width="800" height="300" src="https://raw.githubusercontent.com/freestyletear/password_locker/master/asset/images/taste.png" alt="" /> </p>
 
 
 ---
