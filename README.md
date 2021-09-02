@@ -33,14 +33,14 @@ As a user I would like:
 ## Specifications
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
-| Display codes for navigation | **In terminal: $./passwordLocker.py** | Welcome, choose an option: ca-Create Account, li-Log In, ex-Exit |
+| Display codes for navigation | **In terminal: $./password_Locker.py** | Welcome, choose an option: ca-Create Account, li-Log In, exit()-Exit |
 | Display prompt for creating an account | **Enter: ca** | Enter your first name, last name and password |
 | Display prompt for login in | **Enter: li** | Enter your account name and password |
-| Display codes for navigation | **Successful login** | Choose an option: cc - Create Credential, dc - Display Credentials, copy - Copy Credential, ex - exit |
+| Display codes for navigation | **Successful login** | Choose an option: cc - Create Credential, dc - Display Credentials, copy - Copy Credential, exit() - exit |
 | Display prompt for creating a credential | **Enter: cc** | Enter the social media name, your username/social media handle and password which can be auto generated after you specify the length or input your own |
 | Display a list of credentials | **Enter: dc** | Prints a list of saved credentials |
 | Display prompt for which credential to copy | **Enter: copy** | Enter the social media name of the credential you wish to copy. |
-| Exit application | **Enter: ex** | Exit the current navigation stage |
+| Exit application | **Enter: exit()** | Exit the current navigation stage |
 
 ## SetUp / Installation Requirements
 ### Prerequisites
@@ -72,7 +72,7 @@ To fix a bug or enhance an existing module, follow these steps:
 
 ## Known Bugs / Feature Request
 * Copy function not fully functional
-* If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/freestyletear/quote-angular-trial/issues/new) by including your search query and the expected result.
+* If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/freestyletear/password_locker/issues/new) by including your search query and the expected result.
 
 
 
