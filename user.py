@@ -23,3 +23,22 @@ class User:
         save user details method into users_list
         '''
         User.users_list.append(self)
+
+
+class Credential:
+    '''
+    Class that holds and saves user login details, social media accounts, credentials, passwords
+    '''
+    # Class Variables
+    credentials_list = []
+
+    @classmethod
+    def confirm_user(cls, first_name, password):
+        '''
+		Method that checks if the name and password entered match entries in the users_list
+		'''
+        active_user = ''
+        for user in User.users_list:
+            if (user.first_name == first_name and user.password == password):
+                active_user = user.first_name
+        return active_user
