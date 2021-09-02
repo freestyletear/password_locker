@@ -99,3 +99,17 @@ class TestUser(unittest.TestCase):
         facebook.save_credentials()
         credential_exists = Credential.search_social_media('Facebook')
         self.assertEqual(credential_exists, facebook)
+
+    def test_copy_password(self):  # uses pyperclip
+        '''
+        Test to check if the copy password method will copy the correct password from social media site specified
+        '''
+        self.new_credential.save_credentials()
+        facebook = Credential('Vanessa', 'facebook', 'James', 'keishamapesa')
+        facebook.save_credentials()
+        Credential.copy_password('facebook')
+        self.assertEqual(self.new_credential.password, pyperclip.paste())
+
+
+if __name__ == '__main__':
+    unittest.main()
