@@ -15,7 +15,7 @@ class TestUser(unittest.TestCase):
         '''
         Function to help create user account details before each test
         '''
-        self.new_user = User('Tom', 'Chege', 'angry')
+        self.new_user = User('Keith', 'James', 'freestyletear')
 
     def test_init_(self):
         '''
@@ -31,3 +31,21 @@ class TestUser(unittest.TestCase):
         '''
         self.new_user.save_user()
         self.assertEqual(len(User.users_list), 1)
+
+    class TestCredentials(unittest.TestCase):
+        '''
+        Test class that defines test cases for the credentials class behaviours
+        Args:
+            unittest.TestCase: Testcase class that helps create test cases
+        '''
+
+    def test_confirm_user(self):
+        '''
+        Function to confirm login details to active user
+        '''
+        self.new_user = User('Keith', 'James', 'freestyletear')
+        self.new_user.save_user()
+        userX = User('keith', 'James', 'freestyletear')
+        userX.save_user()
+        active_user = Credential.confirm_user('Keith', 'freestyletear')
+        self.assertTrue(active_user)
