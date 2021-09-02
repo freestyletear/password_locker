@@ -72,3 +72,10 @@ class TestUser(unittest.TestCase):
         '''
         self.new_credential.save_credentials()
         self.assertEqual(len(Credential.credentials_list), 1)
+
+    def tearDown(self):
+        '''
+        tearDown method that executes a set of instructions after every test
+        '''
+        User.users_list = []
+        Credential.credentials_list = []
