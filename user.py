@@ -76,3 +76,20 @@ class Credential:
         Class method to display the list of saved credentials
         '''
         return cls.credentials_list
+
+    @classmethod
+    def search_social_media(cls, social_media):
+        '''
+        Method that acccepts social media name and returns credentials matching the social media name
+        '''
+        for credential in cls.credentials_list:
+            if credential.social_media == social_media:
+                return credential
+
+    @classmethod
+    def copy_password(cls, social_media):
+        '''
+		Class method that copies a credential's password of a specific social media site after the credential's social media name is entered
+		'''
+        collect_password = Credential.search_social_media(social_media)  # It was collect_pass = Credential.search_social_media(social_media)
+        return pyperclip.copy(collect_password.password)
