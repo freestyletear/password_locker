@@ -8,7 +8,7 @@ class User:
     Class to create new user accounts and save the same to help in accesssing the password locker
     '''
 
-    users_list = []
+    users_list = []  # Empty user list
 
     def __init__(self, first_name, last_name, password):
         '''
@@ -20,9 +20,16 @@ class User:
 
     def save_user(self):
         '''
-        save user details method into users_list
+        save_user method saves user objects(details) into user_list
         '''
-        User.users_list.append(self)
+        User.users_list.append(self) #The append() method appends an element to the end of the list.
+
+    def delete_user(self): #### Added from here
+        '''
+        delete_user method deletes a saved user(details) from the user_list
+        '''
+
+        User.user_list.remove(self) ##### To here
 
 
 class Credential:
@@ -86,10 +93,10 @@ class Credential:
             if credential.social_media == social_media:
                 return credential
 
-    @classmethod
+    @classmethod 
     def copy_password(cls, social_media):
         '''
 		Class method that copies a credential's password of a specific social media site after the credential's social media name is entered
 		'''
         collect_password = Credential.search_social_media(social_media)
-        return pyperclip.copy(collect_password.password)
+        return pyperclip.copy(collect_password.password) 

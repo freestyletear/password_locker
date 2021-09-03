@@ -3,7 +3,7 @@
 
 <p align=center >Password Locker is a terminal run python application that allows users to store details i.e. usernames and passwords of their various accounts, 2nd September 2021</p>
 
-<p align="center"> This project was created with Python version 3.8.10 </p>
+<p align="center"> This project was created with Python version 3 </p>
 
 ==========================================================================================================
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=freestyletear" alt="freestyletear github profile trophy's" /></a> </p>
@@ -13,7 +13,7 @@
 ## Languages and Tools
 
 
-[<img src="https://www.python.org/static/opengraph-icon-200x200.png" alt="python" width="100" height="70"/>](https://www.w3schools.com/python/default.asp "python 3+")
+[<img src="https://www.python.org/static/opengraph-icon-200x200.png" alt="python" width="100" height="70"/>](https://www.w3schools.com/python/default.asp "python 3")
 [<img src="https://cdn-images-1.medium.com/max/1200/1*Zkhl4Zz43z2_iR_ADlP-rg.png" alt="google" width="70" height="70"/>](https://www.google.com/ "google")
 [<img src="https://github.githubassets.com/images/modules/open_graph/github-octocat.png" alt="github" width="100" height="70"/>](https://docs.github.com/en "github")
 
@@ -71,7 +71,7 @@ To fix a bug or enhance an existing module, follow these steps:
 ## Testing the Application
 * To run the tests for the class file:
 
-        $ python3.6 user_test.py
+        $ python3 user_test.py
 
 ## Known Bugs / Feature Request
 * Copy function not fully functional

@@ -13,13 +13,13 @@ class TestUser(unittest.TestCase):
 
     def setUp(self):
         '''
-        Function to help create user account details before each test
+        Function to help create user account details before each test cases.
         '''
-        self.new_user = User('Keith', 'James', 'freestyletear')
+        self.new_user = User('Keith', 'James', 'freestyletear') # create contact object
 
     def test_init_(self):
         '''
-        Test to check creation of new user instance
+        test_init test case to test if the object is initialized properly  for the creation of new user instance.
         '''
         self.assertEqual(self.new_user.first_name, 'Keith')
         self.assertEqual(self.new_user.last_name, 'James')
@@ -27,10 +27,31 @@ class TestUser(unittest.TestCase):
 
     def test_save_user(self):
         '''
-        Test to check if New user information is saved into the users_list
+        test_save_user test case to test if the user object(new user information) is saved into the user list.
+
         '''
-        self.new_user.save_user()
+        self.new_user.save_user()  # saving the new user
         self.assertEqual(len(User.users_list), 1)
+
+    def test_save_multiple_user(self): #### Added from here
+        '''
+            test_save_multiple_user to check if we can save multiple user objects to our user_list
+            '''
+        self.new_user.save_user()
+        test_user = User("Vanessa", "james", "keishamapesa")  # new contact
+        test_user.save_user()
+        self.assertEqual(len(User.users_list), 2) ##### To here
+
+    def test_delete_user(self):  # Added from here
+        '''
+            test_delete_contact to test if we can remove a contact from our contact list
+            '''
+        self.new_user.save_user()
+        test_user = User("Vanessa", "james", "keishamapesa")  # new contact
+        test_user.save_user()
+
+        self.new_contact.delete_contact()  # Deleting a contact object
+        self.assertEqual(len(User.contact_list), 1)  ####### To here
 
     class TestCredentials(unittest.TestCase):
         '''
@@ -75,7 +96,7 @@ class TestUser(unittest.TestCase):
 
     def tearDown(self):
         '''
-        tearDown method that executes a set of instructions after every test
+        tearDown method that does clean up and executes a set of instructions after each test case has run.
         '''
         User.users_list = []
         Credential.credentials_list = []

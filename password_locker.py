@@ -13,9 +13,16 @@ def create_user(firstname, lastname, password):
 
 def save_user(user):
     '''
-    Function to save new users
+    Function to save users
     '''
     User.save_user(user)
+
+
+def delete_user(user):  #### I addes this
+    '''
+    Function to delete a user
+    '''
+    user.delete_user()
 
 
 def authenticate_user(first_name, password):
@@ -104,7 +111,7 @@ def main():
 				user_exits = authenticate_user(user_name, password)
 				if user_exits == user_name:
 					print(" ")
-					print(f'{user_name} Before you leave. If you might change your mind please choose an option to continue.')
+					print(f'{user_name} Please choose an option to continue.')
 					print(' ')
 					while True:
 						print("-"*70)
