@@ -12,7 +12,10 @@
 
 ## Languages and Tools
 
-<p align="left"> <a href="https://www.w3schools.com/python/default.asp" target="_blank"> <img src="https://www.python.org/static/opengraph-icon-200x200.png" alt="python" width="100" height="70"/> </a> <img src="https://cdn-images-1.medium.com/max/1200/1*Zkhl4Zz43z2_iR_ADlP-rg.png" alt="google" width="70" height="70"/> <img src="https://github.githubassets.com/images/modules/open_graph/github-octocat.png" alt="github" width="100" height="70"/>  </p> 
+
+[<img src="https://www.python.org/static/opengraph-icon-200x200.png" alt="python" width="100" height="70"/>](https://www.w3schools.com/python/default.asp "python 3+")
+[<img src="https://cdn-images-1.medium.com/max/1200/1*Zkhl4Zz43z2_iR_ADlP-rg.png" alt="google" width="70" height="70"/>](https://www.google.com/ "google")
+[<img src="https://github.githubassets.com/images/modules/open_graph/github-octocat.png" alt="github" width="100" height="70"/>](https://docs.github.com/en "github")
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=freestyletear&show_icons=true&locale=en&layout=compact&theme=cobalt" alt="freestyletear github status on top languages used" /></p>
 
