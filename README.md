@@ -3,7 +3,7 @@
 
 <p align=center >Password Locker is a terminal run python application that allows users to store details i.e. usernames and passwords of their various accounts, 2nd September 2021</p>
 
-<p align="center"> This project was created with [Python](https://www.w3schools.com/python/default.asp) version 3.8.10 </p>
+<p align="center"> This project was created with Python version 3.8.10 </p>
 
 ==========================================================================================================
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=freestyletear" alt="freestyletear github profile trophy's" /></a> </p>
